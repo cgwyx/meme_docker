@@ -12,8 +12,9 @@ RUN conda config --add channels bioconda &&\
     conda config --add channels conda-forge &&\
     conda config --add channels defaults &&\
     conda update --all -y &&\
-    #conda inconda install -y meme
-    conda inconda install -y -c bioconda meme
+    conda inconda install -y meme
+    #conda inconda install -y -c bioconda meme
+
 CMD ["/bin/bash"]
 
 
